@@ -6,9 +6,421 @@
   <title>プレスリリース・ニュースリリース配信サービス シェアNo.1｜PR TIMES</title>
   <meta name="description" content="プレスリリースをPR TIMESで配信して、効果的なPRを実現。上場企業の38.60%（1,470社/3,808社）が利用する現在シェアNo.1のプレスリリース配信代行サービス。話題のベンチャー～グローバル企業のニュースリリースが集まる生活者も要注目のサイトです。プレスリリースの受信は無料です。">
   <meta name="keywords" content="プレスリリース,ニュースリリース,配信,サイト,サービス,方法,代行,PR TIMES">
+  <link rel="stylesheet" href="src/reset.css">
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-  
+  <header class="header">
+    <div class="container container--header">
+      <h1 class="header__title">
+        <a href="#">
+          <img class="header__logo" src="src/images/common/logo_prtimes.svg" alt="PR TIEMSのロゴ" width="122" height="24">
+        </a>
+        <div class="header__subtitle">
+          プレスリリース・ニュースリリース配信サービスのPR TIMES
+        </div>
+      </h1>
+      <nav class="header-action">
+        <ul class="header-action__list">
+          <li><a href="#">プレスリリースを受信</a></li>
+          <li><a href="#">配信を依頼</a></li>
+          <li><a href="#">ログイン</a></li>
+        </ul>
+        <form class="header-action__form" action="POST">
+          <input type="text" placeholder="キーワードで検索">
+          <button><img class="tile__icon" src="src/images/common/icon_search.svg" alt="検索アイコン"></button>
+        </form>
+      </nav>
+    </div>
+    <div class="container">
+      <nav>
+        <ul class="header-nav">
+          <li><a class="header-nav__link header-nav__link--active" href="#">プレスリリース</a></li>
+          <li><a class="header-nav__link" href="#">ランキング</a></li>
+          <li><a class="header-nav__link" href="#">TV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="nav">
+    <div class="container">
+      <ul class="category-nav">
+        <li><a class="category-nav__link category-nav__link--active" href="#">総合</a></li>
+        <li><a class="category-nav__link" href="#">テクノロジー</a></li>
+        <li><a class="category-nav__link" href="#">モバイル</a></li>
+        <li><a class="category-nav__link" href="#">アプリ</a></li>
+        <li><a class="category-nav__link" href="#">エンタメ</a></li>
+        <li><a class="category-nav__link" href="#">ビューティー</a></li>
+        <li><a class="category-nav__link" href="#">ファッション</a></li>
+        <li><a class="category-nav__link" href="#">ライフスタイル</a></li>
+        <li><a class="category-nav__link" href="#">ビジネス</a></li>
+        <li><a class="category-nav__link" href="#">グルメ</a></li>
+        <li><a class="category-nav__link" href="#">スポーツ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="ranking">
+        <div class="ranking__item">
+          <article class="tile">
+            <a class="tile__link" href="#tile">
+              <span class="tile__label">1</span>
+              <div class="tile__img">
+                <img src="src/images/ranking/ranking-1.png" alt="1位記事のサムネイル">
+              </div>
+              <div class="tile__content">
+                <h2 class="tile__title">【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...</h2>
+                <div class="tile__meta">
+                  <div class="tile__desc"><img class="tile__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 2時間前</div>
+                  <object><a href="#company" class="tile__subtitle tile__subtitle--link">いちから株式会社</a></object>
+                  <div class="tile__desc">PV 00,000 / UU 00,000</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="ranking__item">
+          <article class="tile">
+            <a class="tile__link" href="#tile">
+              <span class="tile__label">2</span>
+              <div class="tile__img">
+                <img src="src/images/ranking/ranking-2.png" alt="2位記事のサムネイル">
+              </div>
+              <div class="tile__content">
+                <h2 class="tile__title">従業員に国内最大級の「危険手当」を支給</h2>
+                <div class="tile__meta">
+                  <div class="tile__desc"><img class="tile__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 1時間前</div>
+                  <object><a href="#company" class="tile__subtitle tile__subtitle--link">株式会社SHIFT</a></object>
+                  <div class="tile__desc">PV 00,000 / UU 00,000</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="ranking__item">
+          <article class="tile">
+            <a class="tile__link" href="#tile">
+              <span class="tile__label">3</span>
+              <div class="tile__img">
+                <img src="src/images/ranking/ranking-3.png" alt="3位記事のサムネイル">
+              </div>
+              <div class="tile__content">
+                <h2 class="tile__title">【医療関係優先期間終了】洗える布マスク「スーパーフィット」の一般販売...</h2>
+                <div class="tile__meta">
+                  <div class="tile__desc"><img class="tile__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 2時間前</div>
+                  <object><a href="#company" class="tile__subtitle tile__subtitle--link">いちから株式会社</a></object>
+                  <div class="tile__desc">PV 00,000 / UU 00,000</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="ranking__item">
+          <article class="tile">
+            <a class="tile__link" href="#tile">
+              <span class="tile__label">4</span>
+              <div class="tile__img">
+                <img src="src/images/ranking/ranking-4.jpg" alt="4位記事のサムネイル">
+              </div>
+              <div class="tile__content">
+                <h2 class="tile__title">【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...</h2>
+                <div class="tile__meta">
+                  <div class="tile__desc"><img class="tile__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン">200年3月10日</div>
+                  <object><a href="#company" class="tile__subtitle tile__subtitle--link">いちから株式会社</a></object>
+                  <div class="tile__desc">PV 00,000 / UU 00,000</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="ranking__item">
+          <article class="tile">
+            <a class="tile__link" href="#tile">
+              <span class="tile__label">5</span>
+              <div class="tile__img">
+                <img src="src/images/ranking/ranking-5.jpg" alt="5位記事のサムネイル">
+              </div>
+              <div class="tile__content">
+                <h2 class="tile__title">ニコニコ超会議2020 東大寺から疫病退散を祈願 法要と国宝</h2>
+                <div class="tile__meta">
+                  <div class="tile__desc"><img class="tile__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 2時間前</div>
+                  <object><a href="#company" class="tile__subtitle tile__subtitle--link">いちから株式会社</a></object>
+                  <div class="tile__desc">PV 00,000 / UU 00,000</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="ranking__item">
+          <article class="tile">
+            <a class="tile__link" href="#tile">
+              <span class="tile__label">6</span>
+              <div class="tile__img">
+                <img src="src/images/ranking/ranking-6.png" alt="6位記事のサムネイル">
+              </div>
+              <div class="tile__content">
+                <h2 class="tile__title">東京証券取引所市場第一部へのお知らせ</h2>
+                <div class="tile__meta">
+                  <div class="tile__desc"><img class="tile__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 2時間前</div>
+                  <object><a href="#company" class="tile__subtitle tile__subtitle--link">いちから株式会社</a></object>
+                  <div class="tile__desc">PV 00,000 / UU 00,000</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="wrapper wrapper--top">
+    <div class="container">
+      <div class="column-2">
+        <div class="column-2__main">
+          <main class="main">
+            <section class="main__section">
+              <header class="main__header">
+                <h1 class="main__title">新着プレスリリース</h1>
+              </header>
+              <div class="card-2">
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">近くの飲食店を社食として利用できる【どこでも社食】が「東京純豆腐」と提携</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">創業10年で10件の特許を取得！</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">チャット型検索エンジン『CHAT EXTENSION』を提供開始</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">AWAが月額480円の新プラン「学生プラン」をスタート</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">ブシロード公認カードゲーム専門店支援施策 3月度還元額を公認店様へご案内！</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">TikTokで話題の楽曲「HOT SONG」3月度版プレイリストを「AWA」で公開</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">NHK　Eテレ「おかあさんといっしょ」で子どもたちに人気の体操「からだ☆ダンダン」のＴシャツが発売決..</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">4月13日以降の串カツ田中店舗営業に関して</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+                <div class="card-2__item">
+                  <article class="card">
+                    <a class="card__link" href="#card">
+                      <div class="card__content">
+                        <h2 class="card__title">カフェのサブスク「CAFE PASS」がLINEログインに対応。</h2>
+                        <div class="card__img">
+                          <img src="src/images/list/list.jpg" alt="リスト記事のサムネイル">
+                        </div>
+                      </div>
+                      <div class="card__meta">
+                        <div class="card__desc"><img class="card__icon" width="15" height="15" src="src/images/common/icon_time.svg" alt="時計のアイコン"> 5分前</div>
+                        <object><a href="#company" class="card__subtitle card__subtitle--link">BRITA Japan株式会社</a></object>
+                      </div>
+                    </a>
+                  </article>
+                </div>
+              </div>
+              <footer class="main__footer">
+                <a class="main__more" href="#more">もっと見る</a>
+              </footer>
+            </section>
+          </main>
+        </div>
+        <div class="column-2__sub">
+          <aside class="sidebar">
+            <header class="sidebar__header">
+              <h3 class="sidebar__title">今注目のキーワード</h3>
+            </header>
+            <nav class="sidebar__nav">
+              <ul class="tag-cloud">
+                <li class="tag-cloud__item"><a class="tag" href="#tag">桜</a></li>
+                <li class="tag-cloud__item"><a class="tag" href="#tag">令和</a></li>
+                <li class="tag-cloud__item"><a class="tag" href="#tag">テレワーク</a></li>
+                <li class="tag-cloud__item"><a class="tag" href="#tag">#AprilDream</a></li>
+                <li class="tag-cloud__item"><a class="tag" href="#tag">電子マネー</a></li>
+                <li class="tag-cloud__item"><a class="tag" href="#tag">令和</a></li>
+                <li class="tag-cloud__item"><a class="tag tag--more" href="#tag">もっと見る</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer-nav">
+        <div class="footer-nav__item">
+          <h3 class="footer-nav__title">ニュースリリース配信サービス</h3>
+          <ul class="footer-nav__list">
+            <li><a href="#">PR TIEMSとは</a></li>
+            <li><a href="#">料金・プラン</a></li>
+            <li><a href="#">プレスリリースを受信したい方へ</a></li>
+            <li><a href="#">プレスリリースを配信したい方へ</a></li>
+            <li><a href="#">ログイン</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav__item footer-nav__item--double">
+          <h3 class="footer-nav__title">レコメンドサービス</h3>
+          <ul class="footer-nav__list footer-nav__list--col-2">
+            <li><a href="#">無料FAQならTayori</a></li>
+            <li><a href="#">無料メールフォームならTayori</a></li>
+            <li><a href="#">タスク・プロジェクト管理ツールのJooto</a></li>
+            <li><a href="#">PR TIMES TV</a></li>
+            <li><a href="#">PR TIMES LIVE</a></li>
+            <li><a href="#">PR TIMES MAGAZINE</a></li>
+            <li><a href="#">クリッピング</a></li>
+            <li><a href="#">料金・広告ならAdGang</a></li>
+            <li><a href="#">無料占い・今週の運勢ならisuta</a></li>
+            <li><a href="#">無料恋愛占いならisuta</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav__item">
+          <h3 class="footer-nav__title">PR TIEMS公式SNS</h3>
+          <ul class="footer-nav__list">
+            <li><a href="#">公式Facebookページ</a></li>
+            <li><a href="#">Facebookカテゴリ</a></li>
+            <li><a href="#">公式Twitterページ</a></li>
+            <li><a href="#">Twitterカテゴリ</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="footer-info">
+        <ul class="footer-info__list">
+          <li><a href="#">会社概要</a></li>
+          <li><a href="#">プライバシーポリシー</a></li>
+          <li><a href="#">情報セキュリティ基本方針</a></li>
+          <li><a href="#">プレスリリース掲載基準</a></li>
+          <li><a href="#">利用規約</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <small class="footer-copy">Copyright &copy; PR TIMES Inc. All Rights Reserved.</small>
+    </div>
+  </footer>
 </body>
 </html>
