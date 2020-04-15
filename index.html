@@ -12,54 +12,56 @@
 <body>
   <header class="header">
     <div class="container container--header">
-      <h1 class="header__title">
-        <a href="#">
-          <img class="header__logo" src="src/images/common/logo_prtimes.svg" alt="PR TIEMSのロゴ" width="122" height="24">
+      <h1 class="logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="src/images/common/logo_prtimes.svg" alt="PR TIEMSのロゴ" width="122" height="24">
         </a>
-        <div class="header__subtitle">
+        <div class="logo__desc">
           プレスリリース・ニュースリリース配信サービスのPR TIMES
         </div>
       </h1>
-      <nav class="header-action">
-        <ul class="header-action__list">
-          <li><a href="#">プレスリリースを受信</a></li>
-          <li><a href="#">配信を依頼</a></li>
-          <li><a href="#">ログイン</a></li>
-        </ul>
-        <form class="header-action__form" action="POST">
-          <input type="text" placeholder="キーワードで検索">
-          <button><img class="tile__icon" src="src/images/common/icon_search.svg" alt="検索アイコン"></button>
+      <nav class="action">
+        <div class="action__menu">
+          <ul class="menu menu--action">
+            <li class="menu__item"><a class="menu__link" href="#">プレスリリースを受信</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">配信を依頼</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">ログイン</a></li>
+          </ul>
+        </div>
+        <form class="search-bar" action="#" method="post">
+          <input class="search-bar__input" type="text" placeholder="キーワードで検索">
+          <button class="search-bar__btn"><img class="search-bar__icon" src="src/images/common/icon_search.svg" alt="検索アイコン"></button>
         </form>
       </nav>
     </div>
     <div class="container">
       <nav>
-        <ul class="header-nav">
-          <li><a class="header-nav__link header-nav__link--active" href="#">プレスリリース</a></li>
-          <li><a class="header-nav__link" href="#">ランキング</a></li>
-          <li><a class="header-nav__link" href="#">TV</a></li>
+        <ul class="menu menu--header">
+          <li class="menu__item"><a class="menu__link menu__link--active" href="#">プレスリリース</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">ランキング</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">TV</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <nav class="nav">
+  <nav class="section section--nav">
     <div class="container">
-      <ul class="category-nav">
-        <li><a class="category-nav__link category-nav__link--active" href="#">総合</a></li>
-        <li><a class="category-nav__link" href="#">テクノロジー</a></li>
-        <li><a class="category-nav__link" href="#">モバイル</a></li>
-        <li><a class="category-nav__link" href="#">アプリ</a></li>
-        <li><a class="category-nav__link" href="#">エンタメ</a></li>
-        <li><a class="category-nav__link" href="#">ビューティー</a></li>
-        <li><a class="category-nav__link" href="#">ファッション</a></li>
-        <li><a class="category-nav__link" href="#">ライフスタイル</a></li>
-        <li><a class="category-nav__link" href="#">ビジネス</a></li>
-        <li><a class="category-nav__link" href="#">グルメ</a></li>
-        <li><a class="category-nav__link" href="#">スポーツ</a></li>
+      <ul class="menu menu--category">
+        <li class="menu__item"><a class="menu__link menu__link--active" href="#">総合</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">テクノロジー</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">モバイル</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">アプリ</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">エンタメ</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">ビューティー</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">ファッション</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">ライフスタイル</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">ビジネス</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">グルメ</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">スポーツ</a></li>
       </ul>
     </div>
   </nav>
-  <section>
+  <section class="section section--ranking">
     <div class="container">
       <div class="ranking">
         <div class="ranking__item">
@@ -173,17 +175,17 @@
       </div>
     </div>
   </section>
-  <section class="wrapper wrapper--top">
+  <section class="section section--layout">
     <div class="container">
-      <div class="column-2">
-        <div class="column-2__main">
-          <main class="main">
-            <section class="main__section">
-              <header class="main__header">
-                <h1 class="main__title">新着プレスリリース</h1>
+      <div class="layout layout--2">
+        <div class="layout__main">
+          <main>
+            <section class="articles">
+              <header class="layout__header">
+                <h1 class="layout__title">新着プレスリリース</h1>
               </header>
-              <div class="card-2">
-                <div class="card-2__item">
+              <div class="column column--2">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -199,7 +201,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -215,7 +217,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -231,7 +233,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -247,7 +249,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -263,7 +265,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -279,7 +281,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -295,7 +297,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -311,7 +313,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -327,7 +329,7 @@
                     </a>
                   </article>
                 </div>
-                <div class="card-2__item">
+                <div class="column__item column__item--bb">
                   <article class="card">
                     <a class="card__link" href="#card">
                       <div class="card__content">
@@ -344,26 +346,26 @@
                   </article>
                 </div>
               </div>
-              <footer class="main__footer">
-                <a class="main__more" href="#more">もっと見る</a>
-              </footer>
+              <div class="articles__more">
+                <a class="btn" href="#more">もっと見る</a>
+              </div>
             </section>
           </main>
         </div>
-        <div class="column-2__sub">
+        <div class="layout__sub">
           <aside class="sidebar">
-            <header class="sidebar__header">
-              <h3 class="sidebar__title">今注目のキーワード</h3>
+            <header class="layout__header">
+              <h3 class="layout__title layout__title--2">今注目のキーワード</h3>
             </header>
-            <nav class="sidebar__nav">
-              <ul class="tag-cloud">
-                <li class="tag-cloud__item"><a class="tag" href="#tag">桜</a></li>
-                <li class="tag-cloud__item"><a class="tag" href="#tag">令和</a></li>
-                <li class="tag-cloud__item"><a class="tag" href="#tag">テレワーク</a></li>
-                <li class="tag-cloud__item"><a class="tag" href="#tag">#AprilDream</a></li>
-                <li class="tag-cloud__item"><a class="tag" href="#tag">電子マネー</a></li>
-                <li class="tag-cloud__item"><a class="tag" href="#tag">令和</a></li>
-                <li class="tag-cloud__item"><a class="tag tag--more" href="#tag">もっと見る</a></li>
+            <nav class="sidebar__content">
+              <ul class="menu menu--tag">
+                <li class="menu__item"><a class="menu__link" href="#tag">桜</a></li>
+                <li class="menu__item"><a class="menu__link" href="#tag">令和</a></li>
+                <li class="menu__item"><a class="menu__link" href="#tag">テレワーク</a></li>
+                <li class="menu__item"><a class="menu__link" href="#tag">#AprilDream</a></li>
+                <li class="menu__item"><a class="menu__link" href="#tag">電子マネー</a></li>
+                <li class="menu__item"><a class="menu__link" href="#tag">令和</a></li>
+                <li class="menu__item"><a class="menu__link menu__link--more" href="#tag">もっと見る</a></li>
               </ul>
             </nav>
           </aside>
@@ -373,53 +375,53 @@
   </section>
   <footer class="footer">
     <div class="container">
-      <nav class="footer-nav">
-        <div class="footer-nav__item">
-          <h3 class="footer-nav__title">ニュースリリース配信サービス</h3>
-          <ul class="footer-nav__list">
-            <li><a href="#">PR TIEMSとは</a></li>
-            <li><a href="#">料金・プラン</a></li>
-            <li><a href="#">プレスリリースを受信したい方へ</a></li>
-            <li><a href="#">プレスリリースを配信したい方へ</a></li>
-            <li><a href="#">ログイン</a></li>
+      <nav class="footer-menu">
+        <div class="footer-menu__content">
+          <h3 class="footer-menu__title">ニュースリリース配信サービス</h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIEMSとは</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">料金・プラン</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">プレスリリースを受信したい方へ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">プレスリリースを配信したい方へ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">ログイン</a></li>
           </ul>
         </div>
-        <div class="footer-nav__item footer-nav__item--double">
-          <h3 class="footer-nav__title">レコメンドサービス</h3>
-          <ul class="footer-nav__list footer-nav__list--col-2">
-            <li><a href="#">無料FAQならTayori</a></li>
-            <li><a href="#">無料メールフォームならTayori</a></li>
-            <li><a href="#">タスク・プロジェクト管理ツールのJooto</a></li>
-            <li><a href="#">PR TIMES TV</a></li>
-            <li><a href="#">PR TIMES LIVE</a></li>
-            <li><a href="#">PR TIMES MAGAZINE</a></li>
-            <li><a href="#">クリッピング</a></li>
-            <li><a href="#">料金・広告ならAdGang</a></li>
-            <li><a href="#">無料占い・今週の運勢ならisuta</a></li>
-            <li><a href="#">無料恋愛占いならisuta</a></li>
+        <div class="footer-menu__content footer-menu__content--double">
+          <h3 class="footer-menu__title">レコメンドサービス</h3>
+          <ul class="footer-menu__list footer-menu__list--col-2">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料FAQならTayori</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料メールフォームならTayori</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">タスク・プロジェクト管理ツールのJooto</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES TV</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES LIVE</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES MAGAZINE</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">クリッピング</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">料金・広告ならAdGang</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料占い・今週の運勢ならisuta</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料恋愛占いならisuta</a></li>
           </ul>
         </div>
-        <div class="footer-nav__item">
-          <h3 class="footer-nav__title">PR TIEMS公式SNS</h3>
-          <ul class="footer-nav__list">
-            <li><a href="#">公式Facebookページ</a></li>
-            <li><a href="#">Facebookカテゴリ</a></li>
-            <li><a href="#">公式Twitterページ</a></li>
-            <li><a href="#">Twitterカテゴリ</a></li>
+        <div class="footer-menu__content">
+          <h3 class="footer-menu__title">PR TIEMS公式SNS</h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">公式Facebookページ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Facebookカテゴリ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">公式Twitterページ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Twitterカテゴリ</a></li>
           </ul>
         </div>
       </nav>
-      <nav class="footer-info">
-        <ul class="footer-info__list">
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">プライバシーポリシー</a></li>
-          <li><a href="#">情報セキュリティ基本方針</a></li>
-          <li><a href="#">プレスリリース掲載基準</a></li>
-          <li><a href="#">利用規約</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+      <nav class="footer__info">
+        <ul class="menu menu--footer">
+          <li class="menu__item"><a class="menu__link" href="#">会社概要</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">プライバシーポリシー</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">情報セキュリティ基本方針</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">プレスリリース掲載基準</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">利用規約</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">お問い合わせ</a></li>
         </ul>
       </nav>
-      <small class="footer-copy">Copyright &copy; PR TIMES Inc. All Rights Reserved.</small>
+      <small class="footer__copy">Copyright &copy; PR TIMES Inc. All Rights Reserved.</small>
     </div>
   </footer>
 </body>
