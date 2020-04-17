@@ -526,7 +526,7 @@ body {
 .search-bar {
   display: flex;
 }
-.search-bar__input{
+.search-bar__input {
   border: none;
   border-radius: 2px 0 0 2px;
   padding: 0.75em 1em;
@@ -536,6 +536,11 @@ body {
 .search-bar__input:focus {
   outline: none;
   width: 24em;
+}
+.search-bar__input--side {
+  border: 1px solid var(--color-muted);
+  border-right: none;
+  flex: 1;
 }
 .search-bar__btn {
   font-size: inherit;
