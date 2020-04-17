@@ -13,19 +13,27 @@
   <header class="header">
     <div class="container container--header">
       <h1 class="logo">
-        <a class="logo__link" href="#">
+        <a class="logo__link" href="index.html">
           <img class="logo__img" src="src/images/common/logo_prtimes.svg" alt="PR TIEMSのロゴ" width="122" height="24">
         </a>
         <span class="logo__desc">
           プレスリリース・ニュースリリース配信サービスのPR TIMES
         </span>
       </h1>
-      <nav>
-        <ul class="header-menu">
-          <li class="header-menu__item"><a class="header-menu__link" href="#">プレスリリースを受信</a></li>
-          <li class="header-menu__item"><a class="header-menu__link" href="#">配信を依頼</a></li>
-          <li class="header-menu__item"><a class="header-menu__link" href="#">ログイン</a></li>
-        </ul>
+      <nav class="header-action">
+        <div class="header-action__item">
+          <form class="search-bar" action="#" method="post">
+            <input class="search-bar__input" type="text" placeholder="キーワードで検索">
+            <button class="search-bar__btn"><img class="search-bar__icon" src="src/images/common/icon_search.svg" alt="検索アイコン"></button>
+          </form>
+        </div>
+        <div class="header-action__item">
+          <ul class="header-menu">
+            <li class="header-menu__item"><a class="header-menu__link" href="#">プレスリリースを受信</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">配信を依頼</a></li>
+            <li class="header-menu__item"><a class="header-menu__link header-menu__link--btn" href="#">ログイン</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
