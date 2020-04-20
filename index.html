@@ -10,50 +10,52 @@
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container container--header">
-      <h1 class="logo">
-        <a class="logo__link" href="index.html">
-          <img class="logo__img" src="src/images/common/logo_prtimes.svg" alt="PR TIEMSのロゴ" width="122" height="24">
-        </a>
-        <span class="logo__desc">
-          プレスリリース・ニュースリリース配信サービスのPR TIMES
-        </span>
-      </h1>
-      <nav class="header-action">
-        <div class="header-action__item">
-          <form class="search-bar" action="#" method="post">
-            <input class="search-bar__input" type="text" placeholder="キーワードで検索">
-            <button class="search-bar__btn"><img class="search-bar__icon" src="src/images/common/icon_search.svg" alt="検索アイコン"></button>
-          </form>
-        </div>
-        <div class="header-action__item">
-          <ul class="header-menu">
-            <li class="header-menu__item"><a class="header-menu__link" href="#">プレスリリースを受信</a></li>
-            <li class="header-menu__item"><a class="header-menu__link" href="#">配信を依頼</a></li>
-            <li class="header-menu__item"><a class="header-menu__link header-menu__link--btn" href="#">ログイン</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <nav class="section section--nav">
+  <header class="section section--header">
     <div class="container">
-      <ul class="nav">
-        <li class="nav__item"><a class="nav__link nav__link--active" href="#">総合</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">テクノロジー</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">モバイル</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">アプリ</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">エンタメ</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">ビューティー</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">ファッション</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">ライフスタイル</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">ビジネス</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">グルメ</a></li>
-        <li class="nav__item"><a class="nav__link" href="#">スポーツ</a></li>
-      </ul>
+      <div class="header">
+        <h1 class="logo">
+          <a class="logo__link" href="index.html">
+            <img class="logo__img" src="src/images/common/logo_prtimes.svg" alt="PR TIEMSのロゴ" width="122" height="24">
+          </a>
+          <span class="logo__desc">
+            プレスリリース・ニュースリリース配信サービスのPR TIMES
+          </span>
+        </h1>
+        <nav class="header-action">
+          <div class="header-action__item">
+            <form class="search-bar" action="#" method="post">
+              <input class="search-bar__input" type="text" placeholder="キーワードで検索">
+              <button class="search-bar__btn"><img class="search-bar__icon" src="src/images/common/icon_search.svg" alt="検索アイコン"></button>
+            </form>
+          </div>
+          <div class="header-action__item">
+            <ul class="header-menu">
+              <li class="header-menu__item"><a class="header-menu__link" href="#">プレスリリースを受信</a></li>
+              <li class="header-menu__item"><a class="header-menu__link" href="#">配信を依頼</a></li>
+              <li class="header-menu__item"><a class="header-menu__link header-menu__link--btn" href="#">ログイン</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-  </nav>
+    <nav class="section section--nav">
+      <div class="container">
+        <ul class="nav">
+          <li class="nav__item"><a class="nav__link nav__link--active" href="#">総合</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">テクノロジー</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">モバイル</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">アプリ</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">エンタメ</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">ビューティー</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">ファッション</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">ライフスタイル</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">ビジネス</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">グルメ</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">スポーツ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <section class="section section--ranking">
     <div class="container">
       <ul class="tab-menu">
@@ -153,7 +155,7 @@
       </div>
     </div>
   </section>
-  <section class="section section--layout">
+  <div class="section section--layout">
     <div class="container">
       <div class="layout">
         <div class="layout__main">
@@ -312,7 +314,7 @@
           <div class="layout__content">
             <section class="section">
               <header class="section__header">
-                <h3 class="section__title section__title--h2">PR TIMESからのお知らせ</h3>
+                <h2 class="section__title section__title--h2">PR TIMESからのお知らせ</h2>
               </header>
               <ul class="list">
                 <li class="list__item">
@@ -370,7 +372,7 @@
           </div>
           <aside class="layout__content">
             <div class="desc">
-              <h3 class="desc__title">プレスリリース・ニュースリリース配信サービスのPR TIMES</h3>
+              <h2 class="desc__title">プレスリリース・ニュースリリース配信サービスのPR TIMES</h2>
               <p class="desc__content">
                 プレスリリース・ニュースリリース配信で効果的なPRを実現する −PR TIMES プレスリリース配信サイト「PR TIMES」は、抜群のマーケティング費用対効果（ROI）を可能にする新しいコンセプトのPRサービスです。 プレスリリースをメディア関係者向けに報道資料として最大限活用し、メディアでの記事掲載の機会を獲得します（平均記事掲載数NO.1：2014年12月当社調査）。 また、月間1億PV以上の11サイトのほか計195サイトと提携（プレスリリース掲載サイトの合計閲覧数NO.1）し、PR TIMESのサイトは月間3,400万PVを記録（サイト閲覧数NO.1：ビデオリサーチインタラクティブ調べ）。Facebookページのファンは126,300人超、Twitterのフォロワー117,400人超。プレスリリースで生活者へ直接ニュースを十分に伝え、さらにソーシャルネットワークで広まる機会を創出します。
               </p>
@@ -379,8 +381,8 @@
         </div>
         <div class="layout__sub">
           <div class="layout__header"></div>
-          <aside class="sidebar">
-            <div class="sidebar__content">
+          <div class="sidebar">
+            <aside class="sidebar__content">
               <div class="cta">
                 <div class="cta__img">
                   <img src="src/images/ranking/ranking-1.png" alt="ctaの画像">
@@ -392,8 +394,8 @@
                   <a class="btn" href="#cta">PR TIMES TV</a>
                 </div>
               </div>
-            </div>
-            <div class="sidebar__content">
+            </aside>
+            <aside class="sidebar__content">
               <div class="cta">
                 <div class="cta__img">
                   <img src="src/images/ranking/ranking-1.png" alt="ctaの画像">
@@ -405,13 +407,7 @@
                   <a class="btn" href="#cta">PRTIMES MAGAZINE</a>
                 </div>
               </div>
-            </div>
-            <!-- <div class="sidebar__content">
-              <form class="search-bar" action="#" method="post">
-                <input class="search-bar__input search-bar__input--side" type="text" placeholder="キーワードで検索">
-                <button class="search-bar__btn"><img class="search-bar__icon" src="src/images/common/icon_search.svg" alt="検索アイコン"></button>
-              </form>
-            </div> -->
+            </aside>
             <nav class="sidebar__content">
               <h3 class="sidebar__title">今注目のキーワード</h3>
               <ul class="tag">
@@ -427,60 +423,62 @@
                 <li class="tag__item"><a class="tag__link tag__link--more" href="#tag">もっと見る</a></li>
               </ul>
             </nav>
-          </aside>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <footer class="footer">
+  </div>
+  <footer class="section section--footer">
     <div class="container">
-      <nav class="footer-menu">
-        <div class="footer-menu__content">
-          <h3 class="footer-menu__title">ニュースリリース配信サービス</h3>
-          <ul class="footer-menu__list">
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIEMSとは</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">料金・プラン</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">プレスリリースを受信したい方へ</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">プレスリリースを配信したい方へ</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">ログイン</a></li>
+      <div class="footer">
+        <nav class="footer-menu">
+          <div class="footer-menu__content">
+            <h4 class="footer-menu__title">ニュースリリース配信サービス</h4>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIEMSとは</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">料金・プラン</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">プレスリリースを受信したい方へ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">プレスリリースを配信したい方へ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">ログイン</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu__content footer-menu__content--double">
+            <h4 class="footer-menu__title">レコメンドサービス</h4>
+            <ul class="footer-menu__list footer-menu__list--col-2">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料FAQならTayori</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料メールフォームならTayori</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">タスク・プロジェクト管理ツールのJooto</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES TV</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES LIVE</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES MAGAZINE</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">クリッピング</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">料金・広告ならAdGang</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料占い・今週の運勢ならisuta</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料恋愛占いならisuta</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu__content">
+            <h4 class="footer-menu__title">PR TIEMS公式SNS</h4>
+            <ul class="footer-menu__list">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">公式Facebookページ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Facebookカテゴリ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">公式Twitterページ</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Twitterカテゴリ</a></li>
+            </ul>
+          </div>
+        </nav>
+        <nav class="footer__info">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">会社概要</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">プライバシーポリシー</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">情報セキュリティ基本方針</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">プレスリリース掲載基準</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">利用規約</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">お問い合わせ</a></li>
           </ul>
-        </div>
-        <div class="footer-menu__content footer-menu__content--double">
-          <h3 class="footer-menu__title">レコメンドサービス</h3>
-          <ul class="footer-menu__list footer-menu__list--col-2">
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料FAQならTayori</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料メールフォームならTayori</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">タスク・プロジェクト管理ツールのJooto</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES TV</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES LIVE</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">PR TIMES MAGAZINE</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">クリッピング</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">料金・広告ならAdGang</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料占い・今週の運勢ならisuta</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">無料恋愛占いならisuta</a></li>
-          </ul>
-        </div>
-        <div class="footer-menu__content">
-          <h3 class="footer-menu__title">PR TIEMS公式SNS</h3>
-          <ul class="footer-menu__list">
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">公式Facebookページ</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Facebookカテゴリ</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">公式Twitterページ</a></li>
-            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Twitterカテゴリ</a></li>
-          </ul>
-        </div>
-      </nav>
-      <nav class="footer__info">
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">会社概要</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">プライバシーポリシー</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">情報セキュリティ基本方針</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">プレスリリース掲載基準</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">利用規約</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">お問い合わせ</a></li>
-        </ul>
-      </nav>
-      <small class="footer__copy">Copyright &copy; PR TIMES Inc. All Rights Reserved.</small>
+        </nav>
+        <small class="footer__copy">Copyright &copy; PR TIMES Inc. All Rights Reserved.</small>
+      </div>
     </div>
   </footer>
   <script src="src/main.js"></script>
