@@ -5,7 +5,7 @@
   --l: 31%;
   --bg-main: hsl(var(--h), var(--s), var(--l));
   --bg-body: hsl(var(--h), var(--s), var(--l), 0.04);
-  --bg-muted: hsl(var(--h), var(--s), 94%);
+  --bg-muted: hsl(var(--h), var(--s), 97%);
   --bg-light: #f0f0f0;
   --bg-white: #fff;
   
@@ -35,7 +35,7 @@ body {
   font-size: var(--fs-root);
   font-family: "Hiragino Kaku Gothic ProN", sans-serif;
   color: var(--color-black);
-  background: var(--bg-white);
+  background: var(--bg-body);
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -45,23 +45,27 @@ body {
   width: 1126px;
   margin: 0 auto;
 }
-.container--header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
+.section--header {
+  background: var(--bg-main);
+  box-shadow: var(--bs-1);
+  position: relative;
+}
 .section--nav {
   background: var(--bg-white);
-  box-shadow: var(--bs-1);
 }
 .section--ranking {
   padding: 2rem 0;
-  background: var(--bg-body);
 }
 .section--layout {
   padding: 5rem 0;
+  background: var(--bg-white);
 }
+.section--footer {
+  padding: 4rem 0;
+  color: var(--color-dark);
+}
+
 .section__title {
   font-weight: bold;
   margin-bottom: 1em;
@@ -75,8 +79,10 @@ body {
 
 /* header */
 .header {
-  background: var(--bg-main);
-  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
 }
 .logo {
   display: flex;
@@ -139,7 +145,6 @@ body {
 /* nav */
 .nav {
   display: flex;
-  overflow-x: scroll;
 }
 .nav__item {
   flex-grow: 1;
@@ -284,8 +289,8 @@ body {
   color: var(--color-light);
   text-decoration: none;
   transition: .2s ease-out;
-  padding:  0.5em;
-  margin-left: -0.5em;
+  padding:  0.5em 0.75em;
+  margin-left: -0.75em;
   border-radius: 1em;
 }
 .tile__sublink:hover {
@@ -329,10 +334,11 @@ body {
   margin-top: 4rem;
 }
 .layout__main {
-  width: 779px;
+  flex: 1;
 }
 .layout__sub {
   width: 308px;
+  margin-left: 2rem;
 }
 .layout__header {
   height: 42px;
@@ -599,11 +605,6 @@ body {
 }
 
 /* footer */
-.footer {
-  padding: 4rem 0;
-  color: var(--color-dark);
-  background: var(--bg-body);
-}
 .footer__info {
   margin-top: 1.5rem;
   font-size: var(--fs-sm);
